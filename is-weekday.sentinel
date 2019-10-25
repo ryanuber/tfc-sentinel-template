@@ -1,0 +1,13 @@
+import "time"
+
+weekdays = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+]
+
+main = rule {
+    weekdays contains time.now.weekday_name
+}
